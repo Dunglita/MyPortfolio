@@ -1,7 +1,10 @@
-.main {
+body {
   background-color: black;
   width: 100vw;
   height: 100vh;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+}
+#media {
+  font-size: 20px;
 }
