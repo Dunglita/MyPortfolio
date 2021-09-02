@@ -7,13 +7,13 @@ import Forma2 from "../Assets/Images/forma2.png";
 import Forma3 from "../Assets/Images/forma3.png";
 import Forma4 from "../Assets/Images/forma4.png";
 import Forma5 from "../Assets/Images/forma5.png";
-import Forma6 from "../Assets/Images/forma6.png";
-import Link from "react-router-dom";
-export default function NotFound() {
+import { Link } from "react-router-dom";
+export default function NotFound(props) {
   return (
     <>
       <div>
         <div id="img-container">
+          {/* TODO: SEE IF WE KEEP THE CODE OR JUST GET RID OF ANIMATIONS
           <div class="center">
             <div class="wrap">
               <div class="box-1 box">
@@ -34,18 +34,19 @@ export default function NotFound() {
               </div>
             </div>
           </div>
+          */}
           <div id="lost-container">
             <img id="lost" className="images" src={Lost} />
           </div>
-          <button className="btn btn-light" id="home-btn">
-            Take Me Home
-          </button>
+          <Link to={props.vinculo} className="btn btn-warning" id="home-btn">
+            <p>Take Me Home</p>
+          </Link>
           <img id="something" className="images" src={Somenthing} />
+          <img id="forma1" className="images" src={Forma1} />
           <img id="forma2" className="images" src={Forma2} />
           <img id="forma3" className="images" src={Forma3} />
           <img id="forma4" className="images" src={Forma4} />
           <img id="forma5" className="images" src={Forma5} />
-          <img id="forma6" className="images" src={Forma6} />
         </div>
       </div>
     </>

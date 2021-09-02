@@ -7,35 +7,21 @@ body {
 .images {
   position: fixed !important;
 }
+#img-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 #something {
   width: 20%;
   top: 15%;
   left: 28%;
 }
-
-@keyframes move-forma1 {
-  0% {
-    left: -20%;
-    top: 0%;
-  }
-  50% {
-    left: -10%;
-    top: 20%;
-  }
-  100% {
-    left: 0%;
-    top: 0%;
-  }
+#forma1 {
+  top: 5%;
+  width: 30vw;
+  left: -10%;
 }
-@keyframes myOrbit1 {
-  from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
-  }
-}
-
 #forma2 {
   width: 25%;
   right: 5%;
@@ -50,25 +36,14 @@ body {
 #forma4 {
   width: 20%;
   right: -4%;
-  bottom: -28%;
-  animation: myOrbit1 20s linear infinite;
-  transform: rotate(-15deg) !important;
+  bottom: -10%;
+  transform: rotate(-25deg);
 }
 #forma5 {
-  width: 5%;
+  width: 7vw;
   top: 28%;
-  left: 25%;
-  transform: rotate(-15deg);
-}
-
-#forma6 {
-  width: 50vh;
-  height: 50vh;
-}
-#img-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+  left: 30%;
+  animation: float 5s ease-in-out infinite;
 }
 #lost-container {
   align-items: center;
@@ -83,7 +58,18 @@ body {
   right: 20%;
   z-index: 2;
 }
+#home-btn {
+  position: fixed;
+  width: 12vw !important;
+  height: 7vh !important;
+  border-radius: 4vh;
+  margin-top: 48vh;
+  margin-left: 32vw;
+  font-weight: bold;
+  font-size: 18px;
+}
 
+/*
 .center {
   display: flex;
   justify-content: center;
@@ -107,25 +93,6 @@ body {
   justify-content: space-between;
 }
 
-/* animation */
-@keyframes rowup-1 {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(50%, 0, 0);
-  }
-}
-
-@keyframes rowup-2 {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(50%, 0, 0);
-  }
-}
-
 .box-1 {
   animation: 30s rowup-1 linear infinite normal;
 }
@@ -144,30 +111,64 @@ body {
   animation: myOrbit1 20s ease-in-out infinite;
   animation-delay: 1s;
 }
-@keyframes float {
+*/
+/* animations */
+/*
+@keyframes move-forma1 {
   0% {
-    transform: translatey(0px);
-  }
-  25% {
-    transform: translatey(-30px);
+    left: -20%;
+    top: 0%;
   }
   50% {
-    transform: translatey(30px);
-  }
-  75% {
-    transform: translatey(-30px);
+    left: -10%;
+    top: 20%;
   }
   100% {
-    transform: translatey(0px);
+    left: 0%;
+    top: 0%;
   }
 }
-#home-btn {
-  position: fixed;
-  text-align: center;
-  justify-content: center;
-  width: 10vw !important;
-  height: 7vh !important;
-  margin-top: 50vh;
-  margin-left: 32vw;
-  font-size: 2.5vh;
+@keyframes myOrbit1 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes rowup-1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+@keyframes rowup-2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+*/
+@keyframes float {
+  0% {
+    transform: translatey(0px) rotate(-15deg);
+  }
+  25% {
+    transform: translatey(-8%) rotate(-15deg);
+  }
+  50% {
+    transform: translatey(8%) rotate(-15deg);
+  }
+  75% {
+    transform: translatey(-8%) rotate(-15deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(-15deg);
+  }
 }

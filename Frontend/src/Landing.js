@@ -12,7 +12,7 @@ export default function Landing() {
           <Content />
           <h1> Hola mundo</h1>
         </Route>
-        <NotFound />
+        <NotFound vinculo={"/"} />
       </Switch>
     </BrowserRouter>
   );
