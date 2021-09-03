@@ -1,0 +1,30 @@
+.about-me {
+  background-color: rgba(27, 27, 27, 255);
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  padding: 80px 200px;
+}
+.about-me > img {
+  position: relative;
+  left: 0px;
+  margin-right: 80px;
+}
+#right-content {
+  width: 100%;
+  height: fit-content;
+}
+#right-content > h1 {
+  color: gold;
+}
+#right-content > p {
+  color: white;
+}
+#btn-cv {
+  right: 0%;
+  margin-right: 70px;
+}
+#btn-group > button {
+  width: 150px;
+  border-radius: 20px;
+}

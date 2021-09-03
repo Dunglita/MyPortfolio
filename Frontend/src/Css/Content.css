@@ -1,10 +1,31 @@
-h1 {
-  margin-top: 0px;
-  color: navy;
-}
 #banner {
+  z-index: 0;
+  position: fixed;
   width: 100vw;
+  height: 100vh;
 }
 body {
   background-color: #723d46;
+}
+.top {
+  width: 100vw;
+  height: 100vh;
+  background: url("../Assets/Images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+.header > h1,
+h4 {
+  color: aliceblue;
 }
