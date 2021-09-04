@@ -27,14 +27,6 @@
   right: -60px;
 }
 
-#sidebar-btn span {
-  height: 2px;
-  width: 30px;
-  background: #898989;
-  margin-bottom: 5px;
-  display: block;
-}
-
 ul {
   margin: 0px;
   padding: 0px;
@@ -42,6 +34,7 @@ ul {
 
 ul li {
   list-style: none;
+  padding-top: 50px;
 }
 
 #sidebar ul li a {
@@ -53,8 +46,6 @@ ul li {
   display: block;
   padding: 12px;
   text-decoration: none;
-  padding-top: 50px;
-  margin-right: 40px;
 }
 
 #sidebar ul li a:hover {
@@ -65,11 +56,23 @@ ul li {
   transition: all 0.6s ease-in;
   color: #b68e52;
 }
+
 #idiom-link {
   text-decoration: none;
   position: absolute;
+  font-size: 8pt;
+  letter-spacing: 2pt;
+  color: #fff;
   bottom: 10px;
   left: 10px;
+}
+#idiom-link:hover {
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  color: #b68e52;
 }
 
 .ham {

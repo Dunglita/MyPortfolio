@@ -1,7 +1,6 @@
 import React from "react";
-import "../Css/Content.css";
-import SideBar from "./SideBar";
-export default function Content() {
+import "../Css/Welcome.css";
+export default function Welcome() {
   return (
     <>
       <div className="top">

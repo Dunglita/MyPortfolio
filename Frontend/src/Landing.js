@@ -3,8 +3,9 @@ import NotFound from "./Components/NotFound";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import React, { useState } from "react";
 import AboutMe from "./Components/AboutMe";
-import Content from "./Components/Content";
+import Welcome from "./Components/Welcome";
 import SideBar from "./Components/SideBar";
+import Contact from "./Components/Contact";
 export default function Landing() {
   const [isSpanish, setSpanish] = useState("True");
 
@@ -21,12 +22,14 @@ export default function Landing() {
       <Switch>
         <Route exact path="/">
           <SideBar
-            language={"/"}
+            handleLanguage={handleLanguage}
+            isSpanish={isSpanish}
             handleToggleSideBar={handleToggleSideBar}
             isActive={isActive}
           />
-          <Content />
+          <Welcome />
           <AboutMe />
+          <Contact />
         </Route>
         <NotFound vinculo={"/"} />
       </Switch>

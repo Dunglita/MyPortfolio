@@ -22,35 +22,6 @@ export default function NavBar() {
             <Nav.Link href="/Proyect">Proyectos</Nav.Link>
             <Nav.Link href="/AboutMe">Sobre mi</Nav.Link>
             <Nav.Link href="/Contact">Contacto</Nav.Link>
-            <Nav.Item>
-              <a className="nav-link" href="https://github.com/Dunglita">
-                <i id="media" className="bi-github"></i>
-              </a>
-            </Nav.Item>
-            <Nav.Item>
-              <a
-                className="nav-link"
-                href="https://www.linkedin.com/in/-danigarcia/"
-              >
-                <i id="media" className="bi-linkedin"></i>
-              </a>
-            </Nav.Item>
-            <Nav.Item>
-              <a
-                className="nav-link"
-                href="https://www.instagram.com/_danigarcia1/"
-              >
-                <i id="media" className="bi-instagram"></i>
-              </a>
-            </Nav.Item>
-            <Nav.Item>
-              <a
-                className="nav-link"
-                href="https://wa.me/5492616681830/?text=Hola,%20contactame%20en%20whatsapp."
-              >
-                <i id="media" className="bi-whatsapp"></i>
-              </a>
-            </Nav.Item>
           </Nav>
         </Container>
       </Navbar>

@@ -5,9 +5,6 @@ body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
-#media {
-  font-size: 20px;
-}
 * {
   scrollbar-color: #ffeaa7 #1f2029;
   scrollbar-width: thin;

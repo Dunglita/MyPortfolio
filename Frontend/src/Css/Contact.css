@@ -1,0 +1,50 @@
+#contact-me {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 27, 27, 255);
+}
+#socials {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+}
+#social-icon {
+  color: blueviolet;
+  font-size: 60px;
+}
+#social-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact {
+  bottom: 0%;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+#contact::before {
+  content: "";
+  background: url("../Assets/Images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}
+#contact > h1,
+H5 {
+  color: white;
+}

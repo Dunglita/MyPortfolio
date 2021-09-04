@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default function NotFound(props) {
   return (
     <>
-      <div>
+      <div id="notfound-container">
         <div id="img-container">
           {/* TODO: SEE IF WE KEEP THE CODE OR JUST GET RID OF ANIMATIONS
           <div class="center">

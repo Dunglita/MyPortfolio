@@ -40,7 +40,11 @@ export default function SideBar(props) {
         </svg>
       </div>
       <div>
-        <Link to={props.language} id="idiom-link">
+        <Link
+          to={props.isSpanish ? "/" : "/english"}
+          id="idiom-link"
+          onClick={props.handleLanguage}
+        >
           ES/EN
         </Link>
       </div>
