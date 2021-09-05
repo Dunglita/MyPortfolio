@@ -3,9 +3,10 @@ import NotFound from "./Components/NotFound";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import React, { useState } from "react";
 import AboutMe from "./Components/AboutMe";
-import Welcome from "./Components/Welcome";
+import Header from "./Components/Header";
 import SideBar from "./Components/SideBar";
 import Contact from "./Components/Contact";
+import Socials from "./Components/Socials";
 export default function Landing() {
   const [isSpanish, setSpanish] = useState("True");
 
@@ -27,8 +28,9 @@ export default function Landing() {
             handleToggleSideBar={handleToggleSideBar}
             isActive={isActive}
           />
-          <Welcome />
+          <Header />
           <AboutMe />
+          <Socials />
           <Contact />
         </Route>
         <NotFound vinculo={"/"} />

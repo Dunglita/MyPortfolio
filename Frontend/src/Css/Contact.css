@@ -1,50 +1,107 @@
-#contact-me {
-  width: 100vw;
+#contact-wrapper {
+  position: relative;
   height: 100vh;
+  width: 100%;
+  display: flex;
   background-color: rgba(27, 27, 27, 255);
 }
-#socials {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 40vh;
-}
-#social-icon {
-  color: blueviolet;
-  font-size: 60px;
-}
-#social-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#contact {
-  bottom: 0%;
-  width: 100vw;
-  height: 60vh;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-#contact::before {
+#contact-wrapper::before {
+  width: 100%;
+  height: 100vh;
   content: "";
   background: url("../Assets/Images/banner.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
-  z-index: -1;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.5;
-  -webkit-filter: grayscale(1); /* Webkit */
+  opacity: 0.2;
   filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Webkit */
   filter: grayscale(1); /* W3C */
 }
-#contact > h1,
-H5 {
+#contact-heading {
   color: white;
+}
+#contact-icon .col {
+  text-align: center;
+}
+#contact-icon .col > i {
+  color: blueviolet;
+  font-size: 40px;
+}
+#contact-icon .col > h5,
+h3 {
+  color: blueviolet;
+}
+#inli > h3,
+a {
+  padding-top: 6%;
+}
+#contact-container {
+  margin: auto;
+  background-color: rgba(27, 27, 27, 255);
+  text-align: center;
+  justify-content: center;
+}
+#contact-heading > h5,
+h1 {
+  color: white;
+}
+#contact-container1 {
+  padding-bottom: 10%;
+}
+#contact-container2 {
+  padding-top: 10%;
+}
+#adress:focus {
+  outline: none;
+  box-shadow: none;
+}
+#adress:active {
+  outline: none;
+  box-shadow: none;
+}
+#phone:focus {
+  outline: none;
+  box-shadow: none;
+}
+#phone:active {
+  outline: none;
+  box-shadow: none;
+}
+#email:focus {
+  outline: none;
+  box-shadow: none;
+}
+#email:active {
+  outline: none;
+  box-shadow: none;
+}
+#clipboard-container > i {
+  color: blueviolet;
+  margin: 0%;
+}
+#clipboard-btn1 {
+  display: none;
+  padding-left: 2%;
+}
+#clipboard-btn2 {
+  display: none;
+  padding-left: 2%;
+}
+#clipboard-btn3 {
+  display: none;
+  padding-left: 2%;
+}
+#inli {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+#inli:hover > a {
+  display: block;
 }

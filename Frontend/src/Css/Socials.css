@@ -1,0 +1,27 @@
+#social-wrapper {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  background-color: rgba(27, 27, 27, 255);
+}
+#social-container {
+  margin: auto;
+  background-color: rgba(27, 27, 27, 255);
+  text-align: center;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  justify-content: center;
+}
+#social-container .row .col > h1 {
+  color: white;
+}
+#social-icon {
+  color: blueviolet;
+  font-size: 50px;
+}
+#social-container1 {
+  padding-bottom: 2%;
+}
+#social-container2 {
+  padding-top: 2%;
+}
