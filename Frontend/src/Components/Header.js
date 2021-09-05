@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Welcome.css";
-export default function Welcome() {
+import "../Css/Header.css";
+export default function Header() {
   return (
     <>
       <div className="top">
