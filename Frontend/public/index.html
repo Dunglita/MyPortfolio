@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Personal web portfolio created using React"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     
@@ -22,11 +22,115 @@
     />
   <!--Link a web font de bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>React App</title>
+    <title>Dani Garcia</title>
+    <style>
+  #loader-background {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  background-color: #404456;
+  height: 100vw;
+}
+#loader-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.7em;
+  margin-left: -2.7em;
+  width: 5.4em;
+  height: 5.4em;
+  background-color: #404456;
+}
+
+#hill {
+  position: absolute;
+  width: 7.1em;
+  height: 7.1em;
+  top: 1.7em;
+  left: 1.7em;
+  background-color: transparent;
+  border-left: 0.25em solid whitesmoke;
+  transform: rotate(45deg);
+}
+
+#hill:after {
+  content: "";
+  position: absolute;
+  width: 7.1em;
+  height: 7.1em;
+  left: 0;
+  background-color: #404456;
+}
+
+#box {
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border: 0.25em solid whitesmoke;
+  border-radius: 15%;
+  transform: translate(0, -1em) rotate(-45deg);
+  animation: push 2.5s cubic-bezier(0.79, 0, 0.47, 0.97) infinite;
+}
+
+@keyframes push {
+  0% {
+    transform: translate(0, -1em) rotate(-45deg);
+  }
+  5% {
+    transform: translate(0, -1em) rotate(-50deg);
+  }
+  20% {
+    transform: translate(1em, -2em) rotate(47deg);
+  }
+  25% {
+    transform: translate(1em, -2em) rotate(45deg);
+  }
+  30% {
+    transform: translate(1em, -2em) rotate(40deg);
+  }
+  45% {
+    transform: translate(2em, -3em) rotate(137deg);
+  }
+  50% {
+    transform: translate(2em, -3em) rotate(135deg);
+  }
+  55% {
+    transform: translate(2em, -3em) rotate(130deg);
+  }
+  70% {
+    transform: translate(3em, -4em) rotate(217deg);
+  }
+  75% {
+    transform: translate(3em, -4em) rotate(220deg);
+  }
+  100% {
+    transform: translate(0, -1em) rotate(-225deg);
+  }
+}
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
+    <div id="root">
+      <div id="loader-background">
+        <div id="loader-container">
+          <div id="loader">
+            <div id="box"></div>
+            <div id="hill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
