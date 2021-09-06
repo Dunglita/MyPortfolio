@@ -23,7 +23,24 @@
   height: fit-content;
   margin: auto;
 }
-.header > h1,
-h4 {
-  color: aliceblue;
+
+.header > h4 {
+  font-family: "Dynalight", cursive;
+  font-size: 20pt;
+  letter-spacing: 2pt;
+  color: #b68e52;
+}
+.header > h3 {
+  font-size: 22pt;
+  letter-spacing: 8pt;
+  line-height: 30pt;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header > p {
+  font-size: 14pt;
+  font-weight: 400;
+  letter-spacing: 6pt;
+  color: #b68e52;
 }

@@ -30,3 +30,22 @@ body {
   border-top: 1px solid #ffeaa7;
   border-bottom: 1px solid #ffeaa7;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1pt;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 25px;
+  color: #898989;
+}
