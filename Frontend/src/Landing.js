@@ -1,4 +1,5 @@
 import "./Css/Landing.css";
+import "./Css/Fonts.css";
 import NotFound from "./Components/NotFound";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import React, { useState } from "react";
@@ -7,6 +8,9 @@ import Header from "./Components/Header";
 import SideBar from "./Components/SideBar";
 import Contact from "./Components/Contact";
 import Socials from "./Components/Socials";
+import Proyects from "./Components/Proyects";
+import Footer from "./Components/Footer";
+
 export default function Landing() {
   const [isSpanish, setSpanish] = useState("True");
 
@@ -30,8 +34,10 @@ export default function Landing() {
           />
           <Header />
           <AboutMe />
+          <Proyects />
           <Socials />
           <Contact />
+          <Footer />
         </Route>
         <NotFound vinculo={"/"} />
       </Switch>
