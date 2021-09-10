@@ -12,7 +12,8 @@ export default function Contact() {
   const handleCheckCliplboard = () => {
     setClipboard("true");
   };
-  function coptyToClipbaord(info) {
+  function coptyToClipbaord(e, info) {
+    e.preventDefault();
     function clippy() {
       navigator.clipboard.writeText(info);
     }
@@ -21,13 +22,13 @@ export default function Contact() {
   }
   return (
     <>
-      <div id="contact-wrapper">
+      <div id="contact-me" className="contact-wrapper">
         <Container fluid id="contact-container">
           <Container fluid id="contact-container1">
             <Row>
               <Col id="contact-heading">
                 <h1>Contact me</h1>
-                <h5>I'AM AVAILABLE FOR WORK, FEEL FREE TO CO CONTACT ME.</h5>
+                <h5>I'AM AVAILABLE FOR WORK, FEEL FREE TO GET IN TOUCH.</h5>
               </Col>
             </Row>
           </Container>
@@ -45,9 +46,11 @@ export default function Contact() {
                   <h3 id="clipboard-container">garciadanos@gmail.com</h3>
                   <a
                     title="Copy email to ClipBoard"
-                    href="javascript:;"
+                    href="Notfound.html"
                     id="clipboard-btn2"
-                    onClick={() => coptyToClipbaord("garciadanos@gmail.com")}
+                    onClick={(e) =>
+                      coptyToClipbaord(e, "garciadanos@gmail.com")
+                    }
                   >
                     <h3 id="clipboard-container">
                       <i
@@ -71,9 +74,9 @@ export default function Contact() {
                   <h3>+5492616681830</h3>
                   <a
                     title="Copy phone to ClipBoard"
-                    href="javascript:;"
+                    href="Notfound.html"
                     id="clipboard-btn1"
-                    onClick={() => coptyToClipbaord("+5492616681830")}
+                    onClick={(e) => coptyToClipbaord(e, "+5492616681830")}
                   >
                     <h3 id="clipboard-container">
                       <i
@@ -97,10 +100,11 @@ export default function Contact() {
                   <h3>Mendoza, Argentina</h3>
                   <a
                     title="Copy adress to ClipBoard"
-                    href="javascript:;"
+                    href="Notfound.html"
                     id="clipboard-btn1"
-                    onClick={() =>
+                    onClick={(e) =>
                       coptyToClipbaord(
+                        e,
                         "https://www.google.com/maps/place/Mendoza,+Argentina/"
                       )
                     }
