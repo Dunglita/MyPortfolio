@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Css/Sidebar.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function SideBar(props) {
   return (
     <div id="sidebar" className={props.isActive ? null : "visible"}>
       <ul>
         <li>
-          <a href="#about">ABOUT</a>
+          <HashLink to="/#about-me">ABOUT</HashLink>
         </li>
         <li>
-          <a href="#work">WORK</a>
+          <HashLink to="/#my-proyects">PROYECTS</HashLink>
         </li>
         <li>
-          <a href="#clients">CLIENTS</a>
+          <HashLink to="/#my-studies">STUDIES</HashLink>
         </li>
         <li>
-          <a href="#contact">CONTACT</a>
+          <HashLink to="/#contact-me">CONTACT</HashLink>
         </li>
       </ul>
       <div id="sidebar-btn">
