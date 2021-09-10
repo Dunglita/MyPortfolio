@@ -1,7 +1,7 @@
 import "./Css/Landing.css";
 import "./Css/Fonts.css";
 import NotFound from "./Components/NotFound";
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import React, { useState } from "react";
 import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
@@ -10,7 +10,6 @@ import Contact from "./Components/Contact";
 import Socials from "./Components/Socials";
 import Proyects from "./Components/Proyects";
 import Footer from "./Components/Footer";
-
 export default function Landing() {
   const [isSpanish, setSpanish] = useState("True");
 
