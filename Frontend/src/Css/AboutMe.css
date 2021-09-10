@@ -16,16 +16,28 @@
   height: fit-content;
 }
 #right-content > h1 {
-  color: gold;
+  font-family: "Dynalight", cursive;
+  font-size: 25pt;
+  letter-spacing: 2pt;
+  color: #b68e52;
 }
 #right-content > p {
+  font-size: 14pt;
+  font-weight: 200;
   color: white;
 }
 #btn-cv {
+  color: #b68e52;
+  border-color: #b68e52;
+  outline-color: #b68e52;
   right: 0%;
-  margin-right: 70px;
-}
-#btn-group > button {
   width: 150px;
-  border-radius: 20px;
+  border-radius: 100vw;
+}
+#btn-cv:hover {
+  background-color: #b68e52;
+  color: rgba(27, 27, 27, 255);
+}
+#btn-cv:focus {
+  box-shadow: 0 0 0 3px #b68e526e;
 }
