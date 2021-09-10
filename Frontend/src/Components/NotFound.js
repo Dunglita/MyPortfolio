@@ -36,17 +36,22 @@ export default function NotFound(props) {
           </div>
           */}
           <div id="lost-container">
-            <img id="lost" className="images" src={Lost} />
+            <img id="lost" className="images" src={Lost} alt="Lost" />
           </div>
           <Link to={props.vinculo} className="btn btn-warning" id="home-btn">
             <p>Take Me Home</p>
           </Link>
-          <img id="something" className="images" src={Somenthing} />
-          <img id="forma1" className="images" src={Forma1} />
-          <img id="forma2" className="images" src={Forma2} />
-          <img id="forma3" className="images" src={Forma3} />
-          <img id="forma4" className="images" src={Forma4} />
-          <img id="forma5" className="images" src={Forma5} />
+          <img
+            id="something"
+            className="images"
+            src={Somenthing}
+            alt="Something"
+          />
+          <img id="forma1" className="images" src={Forma1} alt="Shape 1" />
+          <img id="forma2" className="images" src={Forma2} alt="Shape 2" />
+          <img id="forma3" className="images" src={Forma3} alt="Shape 3" />
+          <img id="forma4" className="images" src={Forma4} alt="Shape 4" />
+          <img id="forma5" className="images" src={Forma5} alt="Shape 5" />
         </div>
       </div>
     </>
