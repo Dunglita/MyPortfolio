@@ -34,8 +34,8 @@ export default function Landing() {
           <Header />
           <AboutMe />
           <Proyects />
-          <Socials />
           <Contact />
+          <Socials />
           <Footer />
         </Route>
         <NotFound vinculo={"/"} />
