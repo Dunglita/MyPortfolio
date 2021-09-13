@@ -4,6 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 export default function Socials() {
+  function goToSocial(e, info) {
+    e.preventDefault();
+    window.open(info, "_blank");
+  }
   return (
     <>
       <div id="social-wrapper">
@@ -17,31 +21,43 @@ export default function Socials() {
           </Container>
           <Container fluid id="social-container2">
             <Row>
-              <Col className="">
-                <a className="nav-link" href="https://github.com/Dunglita">
+              <Col>
+                <a
+                  href="notFound.html"
+                  onClick={(e) => goToSocial(e, "https://github.com/Dunglita")}
+                >
                   <i id="social-icon" className="bi-github"></i>
                 </a>
               </Col>
               <Col>
                 <a
-                  className="nav-link"
-                  href="https://www.linkedin.com/in/-danigarcia/"
+                  href="notFound.html"
+                  onClick={(e) =>
+                    goToSocial(e, "https://www.linkedin.com/in/-danigarcia/")
+                  }
                 >
                   <i id="social-icon" className="bi-linkedin"></i>
                 </a>
               </Col>
               <Col>
                 <a
-                  className="nav-link"
-                  href="https://www.instagram.com/_danigarcia1/"
+                  href="notFound.html"
+                  onClick={(e) =>
+                    goToSocial(e, "https://www.instagram.com/_danigarcia1/")
+                  }
                 >
                   <i id="social-icon" className="bi-instagram"></i>
                 </a>
               </Col>
               <Col>
                 <a
-                  className="nav-link"
-                  href="https://wa.me/5492616681830/?text=Hola,%20contactame%20en%20whatsapp."
+                  href="notFound.html"
+                  onClick={(e) =>
+                    goToSocial(
+                      e,
+                      "https://wa.me/5492616681830/?text=Hola,%20contactame%20en%20whatsapp."
+                    )
+                  }
                 >
                   <i id="social-icon" className="bi-whatsapp"></i>
                 </a>
