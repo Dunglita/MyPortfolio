@@ -44,3 +44,12 @@
   letter-spacing: 6pt;
   color: #b68e52;
 }
+
+#header-dot1 {
+  top: -15vw;
+  right: -15vw;
+}
+#header-dot2 {
+  top: 5vw;
+  right: 70vw;
+}
