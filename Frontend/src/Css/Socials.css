@@ -16,14 +16,14 @@
   font-family: "Dynalight", cursive;
   font-size: 25pt;
   letter-spacing: 2pt;
-  color: #b68e52;
+  color: #584cfc;
 }
 #social-icon {
-  color: #b68e52;
+  color: #584cfc;
   font-size: 50px;
 }
 #social-icon:hover {
-  color: #ffc774;
+  color: #746aff;
 }
 #social-container1 {
   padding-bottom: 2%;
