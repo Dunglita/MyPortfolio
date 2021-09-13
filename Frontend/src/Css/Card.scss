@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-wrapper i {
+  opacity: 0;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card > h2,
+p {
+  pointer-events: none;
+}
+
+.card-wrapper {
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .card {
+    border-color: white;
+    border-radius: 20px;
+    position: relative;
+    width: 450px;
+    height: 180px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    h2 {
+      z-index: 300;
+      font-family: "Poppins", sans-serif;
+      position: absolute;
+      bottom: 0;
+      right: 117px;
+      font-size: 54px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .fa-arrow-right {
+      z-index: 9;
+      position: absolute;
+      right: 68px;
+      bottom: 23px;
+      font-size: 36px;
+      cursor: pointer;
+    }
+    p {
+      z-index: 99;
+      position: absolute;
+      top: 18px;
+      right: 63px;
+      color: #333;
+      opacity: 0.7;
+      font-size: 11px;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    .pic {
+      z-index: 100;
+      width: 360px;
+      height: 180px;
+      background-size: 100% 100%;
+      filter: grayscale(100%);
+    }
+
+    &:hover i {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      z-index: 201;
+    }
+
+    button {
+      position: absolute;
+      right: 13px;
+      bottom: 13px;
+      width: 27px;
+      height: 27px;
+      border: none;
+      border-radius: 27px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light;
+    }
+
+    &:hover button {
+      transform: scale(16.5);
+      z-index: 200;
+    }
+
+    &:hover p {
+      color: #fff;
+      z-index: 201;
+    }
+
+    &:hover .pic,
+    .pic img {
+      filter: grayscale(0);
+    }
+    &:hover .pic img {
+      filter: grayscale(0);
+    }
+  }
+
+  .card {
+    .pic img {
+      z-index: 100;
+      width: 360px;
+      height: 180px;
+      background-size: 100% 100%;
+      filter: grayscale(100%);
+    }
+  }
+}
