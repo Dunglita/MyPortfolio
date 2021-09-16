@@ -15,17 +15,17 @@ export default function CardList(props) {
       return (
         <>
           <Card
-            showDetail={props.showdDtail}
             handleShowDetail={props.handleShowDetail}
-            proyectDetail={props.proyectDetail}
             handleProyectDetail={props.handleProyectDetail}
             handleDetailColor={props.handleDetailColor}
+            handleSetDetailTag={props.handleSetDetailTag}
             title={proyect.title}
             description={proyect.description}
             link={proyect.link}
             color={proyect.color}
             image={proyect.image}
             detail={proyect.detail}
+            tag={proyect.tag}
           />
         </>
       );
