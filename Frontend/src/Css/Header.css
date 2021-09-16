@@ -1,36 +1,41 @@
-#banner {
-  z-index: 0;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-}
-
 .top {
   width: 100%;
-  height: 100vh;
-  background: url("../Assets/Images/bg.jpg");
+  height: 125vh;
+  background-color: rgba(27, 27, 27, 255);
+  background: url("../Assets/Images/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
+  margin-bottom: 20vh;
 }
 
 .header {
-  text-align: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
   align-items: center;
+}
+.header-content {
   width: fit-content;
   height: fit-content;
   margin: auto;
+  text-align: center;
+  align-items: center;
 }
 
-.header > h4 {
+.header-content > h4 {
   font-family: "Dynalight", cursive;
   font-size: 20pt;
   letter-spacing: 2pt;
-  color: #b68e52;
+  color: #2b26c3;
+  cursor: default;
 }
-.header > h3 {
+.header-content > h3 {
+  cursor: default;
   font-size: 22pt;
   letter-spacing: 8pt;
   line-height: 30pt;
@@ -38,18 +43,28 @@
   color: #fff;
 }
 
-.header > p {
+.header-content > p {
   font-size: 14pt;
   font-weight: 400;
   letter-spacing: 6pt;
-  color: #b68e52;
+  color: #2b26c3;
+  cursor: default;
 }
 
 #header-dot1 {
   top: -15vw;
   right: -15vw;
+  transition: all 2s;
 }
+#header-dot1:hover {
+  transform: scale(0.7);
+}
+
 #header-dot2 {
   top: 5vw;
   right: 70vw;
+  transition: all 2s;
+}
+#header-dot2:hover {
+  transform: scale(1.5);
 }
