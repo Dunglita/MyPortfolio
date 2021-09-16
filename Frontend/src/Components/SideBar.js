@@ -8,16 +8,24 @@ export default function SideBar(props) {
     <div id="sidebar" className={props.isActive ? null : "visible"}>
       <ul>
         <li>
-          <HashLink to="/#about-me">ABOUT</HashLink>
+          <HashLink smooth to="/#about-me">
+            ABOUT
+          </HashLink>
         </li>
         <li>
-          <HashLink to="/#my-proyects">PROYECTS</HashLink>
+          <HashLink smooth to="/#my-proyects">
+            PROYECTS
+          </HashLink>
         </li>
         <li>
-          <HashLink to="/#my-studies">STUDIES</HashLink>
+          <HashLink smooth to="/#my-studies">
+            STUDIES
+          </HashLink>
         </li>
         <li>
-          <HashLink to="/#contact-me">CONTACT</HashLink>
+          <HashLink smooth to="/#contact-me">
+            CONTACT
+          </HashLink>
         </li>
       </ul>
       <div id="sidebar-btn">
