@@ -1,17 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/AboutMe.css";
 import me from "../Assets/Images/me.png";
 import Cv from "../Assets/Docs/CVES.pdf";
 export default function AboutMe() {
+  const [showPersonal, setShowPersonal] = useState(false);
+  const handleSetShowPersonal = (newShowPersonal) => {
+    setShowPersonal(newShowPersonal);
+  };
   return (
     <>
       <div className="about-me" id="about-me">
-        <div id="my-image">
-          <img id="me-img" src={me} alt="Daniel Garcia" />
+        <div id="my-info">
+          <h4
+            className={showPersonal ? "show-personal" : "hide-personal"}
+            onMouseOver={() => handleSetShowPersonal(true)}
+          >
+            Personal
+          </h4>
+          <ul
+            onMouseOver={() => handleSetShowPersonal(true)}
+            className={showPersonal ? "show-personal" : "hide-personal"}
+            id="personal-list"
+          >
+            <li>Dog Lover</li>
+            <li>Dog Lover</li>
+            <li>Dog Lover</li>
+            <li>Dog Lover</li>
+            <li>Dog Lover</li>
+          </ul>
+          <div id="my-image">
+            <img
+              src={me}
+              alt="Daniel Garcia"
+              onMouseOver={() => handleSetShowPersonal(true)}
+              onMouseLeave={() => handleSetShowPersonal(false)}
+            />
+          </div>
         </div>
         <div id="right-content">
           <div id="right-elements">
-            {" "}
             <h1>About me</h1>
             <p>
               Hi, my name is Daniel Garcia, Dani for short, I'm a Fullstack
@@ -37,6 +64,7 @@ export default function AboutMe() {
             >
               View Resume
             </a>
+            <div id="about-dot"></div>
           </div>
         </div>
       </div>

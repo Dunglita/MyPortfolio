@@ -3,25 +3,48 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  padding: 0px 10%;
-  margin-bottom: 30vh;
-  margin-top: 30vh;
+  padding: 10vh 10%;
+  margin-bottom: 20vh;
+  justify-content: center;
+}
+#my-info {
+  height: 100%;
+  width: auto;
+  display: flex;
+  position: relative;
+  border-radius: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#my-info > h4 {
+  position: absolute;
+  top: 10%;
+  color: black;
+}
+#personal-list {
+  position: absolute;
+  color: black;
+  font-weight: 600;
+}
+.show-personal {
+  display: block;
+}
+.hide-personal {
+  display: none;
 }
 #my-image {
-  width: fit-content;
-  height: fit-content;
   border-radius: 40px;
-  margin-right: 1%;
-}
-#my-image {
-  border-radius: 40px;
-  border: 2px solid #da4d1d;
+  border: 1px solid #ff7368;
   height: 80%;
   width: fit-content;
   overflow: hidden;
-  background-color: #da4d1d;
+  background-color: #ff7368;
+  margin: 0px;
+  border-radius: 40px;
 }
-.about-me > div img {
+
+#my-image > img {
   position: relative;
   left: 0px;
   height: 80vh;
@@ -31,10 +54,11 @@
   transition: all 0.5s ease;
 }
 
-.about-me > div img:hover {
+#my-image > img:hover {
   transform: scale(1.5);
   opacity: 0.3;
 }
+
 #right-content {
   width: 70%;
   height: 80vh;
@@ -42,10 +66,10 @@
   background-color: white;
   border-radius: 40px;
   margin-left: 1%;
-  padding: 6%;
+  padding: 2% 6%;
   overflow: auto;
 }
-#right-content > #right-elements {
+#right-elements {
   position: relative;
   margin: auto;
 }
@@ -53,7 +77,7 @@
   font-family: "Dynalight", cursive;
   font-size: 25pt;
   letter-spacing: 2pt;
-  color: #da4d1d;
+  color: #ff7368;
 }
 #right-elements > p {
   font-size: 14pt;
@@ -61,17 +85,21 @@
   color: black;
 }
 #btn-cv {
-  color: #da4d1d;
-  border-color: #da4d1d;
-  outline-color: #da4d1d;
+  color: #ff7368;
+  border-color: #ff7368;
+  outline-color: #ff7368;
   right: 0%;
   width: 150px;
   border-radius: 100vw;
 }
 #btn-cv:hover {
   background-color: #fa865fc2;
-  color: rgba(27, 27, 27, 255);
+  color: white;
 }
 #btn-cv:focus {
   box-shadow: 0 0 0 3px #fa865fc2;
+}
+#about-dot {
+  top: 0px;
+  right: 0px;
 }
