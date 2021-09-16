@@ -7,7 +7,6 @@ import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
 import SideBar from "./Components/SideBar";
 import Contact from "./Components/Contact";
-import Socials from "./Components/Socials";
 import Proyects from "./Components/Proyects";
 import Footer from "./Components/Footer";
 export default function Landing() {
