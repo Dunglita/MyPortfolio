@@ -10,6 +10,10 @@
   margin-bottom: 20vh;
   padding: 2% 0%;
 }
+.learning-title {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .learning-title > h1 {
   font-family: "Dynalight", cursive;
   font-size: 35pt;
