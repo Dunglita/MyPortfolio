@@ -1,0 +1,41 @@
+.skill {
+  flex-basis: 30%;
+  width: 350px;
+  min-width: 350px;
+  min-height: 230px;
+  max-height: 230px;
+  height: fit-content;
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  background: radial-gradient(#ff7368, #5622b8);
+  position: relative;
+  margin: auto;
+  cursor: default;
+}
+
+.skill:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.skill_icon {
+  height: 25%;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+}
+
+.skill_title {
+  margin-top: 8px;
+  height: 25%;
+  font-weight: 400;
+  color: white;
+}
+
+.skill_apply {
+  height: 50%;
+}
+
+/* RESPONSIVE */

@@ -1,0 +1,35 @@
+.tool_Container {
+  flex-basis: 13.8%;
+}
+.tool {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  filter: grayscale();
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(#ff7368, #5622b8);
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.tool_title {
+  color: white;
+}
+.tool_image {
+  width: 80px;
+  height: 80px;
+}
+.tool:hover {
+  filter: none;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+}
+/* RESPONSIVE */
+@media (max-width: 650px) {
+  .tool {
+    filter: none;
+  }
+}

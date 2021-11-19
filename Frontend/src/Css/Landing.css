@@ -13,20 +13,21 @@ body {
 *::-webkit-scrollbar {
   position: absolute;
   z-index: 99;
-  width: 1vw;
+  width: 10px;
   height: 1vw;
 }
 *::-webkit-scrollbar-track {
-  background: #ffeaa7;
+  background: #5622b8;
+  mix-blend-mode: hard-light;
   width: 1vw;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(27, 27, 27, 255);
+  background-color: #ff7368;
   border-radius: 20px;
-  border-left: 1px solid #ffeaa7;
-  border-right: 1px solid #ffeaa7;
-  border-top: 1px solid #ffeaa7;
-  border-bottom: 1px solid #ffeaa7;
+  border-left: 1px solid #5622b8;
+  border-right: 1px solid #5622b8;
+  border-top: 1px solid #5622b8;
+  border-bottom: 1px solid #5622b8;
 }
 h1,
 h2,
@@ -37,31 +38,6 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   letter-spacing: 1pt;
-}
-.dot-big {
-  position: absolute;
-  height: 50vw;
-  width: 50vw;
-  background-color: #2b26c3;
-  border-radius: 50%;
-  mix-blend-mode: hard-light;
-}
-.dot-medium {
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  background-color: #2b26c3;
-  border-radius: 50%;
-  mix-blend-mode: hard-light;
-}
-
-.dot-small {
-  position: absolute;
-  height: 10vw;
-  width: 10vw;
-  background-color: #2b26c3;
-  border-radius: 50%;
-  mix-blend-mode: hard-light;
 }
 
 /*
