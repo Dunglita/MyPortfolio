@@ -4,8 +4,7 @@
     "title": "Portfolio",
     "description": "My personal web",
     "link": "https://github.com/Dunglita/MyPortfolio",
-    "color": "#2b26c3",
-    "image": "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80",
+    "image": "Images/proyect1.jpg",
     "detail": "If you are reading this, I acomplished my goal with this proyect. My portfolio is where I intend to showcase everything I've been learning the last years about Web and mostly Frontend desing.",
     "tag": "#Overcoming"
   },
@@ -14,8 +13,7 @@
     "title": "Winery",
     "description": "First react proyect",
     "link": "https://github.com/Dunglita/WineryProyect",
-    "color": "#ff493b",
-    "image": "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80",
+    "image": "Images/proyect2.jpg",
     "detail": "I created this proyect when I got started in React and NodeJS, (still under development), it's a fully functional winery web, it includes landig page, subpages, and an administration section.",
     "tag": "#Learning"
   },
@@ -24,8 +22,7 @@
     "title": "Ad Astra",
     "description": "Discord music bot",
     "link": "https://github.com/Dunglita/AdAstra",
-    "color": "#b126c3",
-    "image": "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80",
+    "image": "Images/proyect3.jpg",
     "detail": "Ad Astra it's a Discord Bot I made in order to record information about songs when them are played in a server with the most popular music bots. Its fully writed in JavaScript.",
     "tag": "#Entreteinment"
   }

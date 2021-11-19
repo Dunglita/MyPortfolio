@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript",
+    "path": "Icons/javascript.svg",
+    "experience": "2+ years"
+  },
+  {
+    "id": 2,
+    "title": "HTML",
+    "path": "Icons/html.svg",
+    "section": "Frontend",
+    "experience": "3+ years"
+  },
+  {
+    "id": 3,
+    "title": "Bootstrap",
+    "path": "Icons/bootstrap.svg",
+    "section": "Frontend",
+    "experience": "2+ years"
+  },
+  {
+    "id": 4,
+    "title": "C++",
+    "path": "Icons/c.svg",
+    "section": "",
+    "experience": "1+ years"
+  },
+  {
+    "id": 5,
+    "title": "CSS",
+    "path": "Icons/css.svg",
+    "section": "Frontend",
+    "experience": "2+ years"
+  },
+  {
+    "id": 6,
+    "title": "Java",
+    "path": "Icons/java.svg",
+    "section": "backend",
+    "experience": "1 year"
+  },
+  {
+    "id": 7,
+    "title": "Express",
+    "path": "Icons/express.svg",
+    "section": "Backend",
+    "experience": "1+ years"
+  },
+  {
+    "id": 8,
+    "title": "Figma",
+    "path": "Icons/figma.svg",
+    "section": "tools",
+    "experience": "1 year"
+  },
+  {
+    "id": 9,
+    "title": "MySQL",
+    "path": "Icons/mysql.svg",
+    "section": "backend",
+    "experience": "2+ years"
+  },
+  {
+    "id": 10,
+    "title": "NodeJS",
+    "path": "Icons/node.svg",
+    "section": "Backend",
+    "experience": "1+ years"
+  },
+  {
+    "id": 11,
+    "title": "PHP",
+    "path": "Icons/php.svg",
+    "section": "backend",
+    "experience": "1+ years"
+  },
+  {
+    "id": 12,
+    "title": "Python",
+    "path": "Icons/python.svg",
+    "section": "Backend",
+    "experience": "Learning"
+  },
+  {
+    "id": 13,
+    "title": "Git",
+    "path": "Icons/git.svg",
+    "section": "tools",
+    "experience": "1+ years"
+  },
+  {
+    "id": 14,
+    "title": "GitHub",
+    "path": "Icons/github.svg",
+    "section": "tools",
+    "experience": "1+ years"
+  },
+  {
+    "id": 15,
+    "title": "React",
+    "path": "Icons/reactjs.svg",
+    "section": "Frontend",
+    "experience": "1+ years"
+  },
+  {
+    "id": 16,
+    "title": "Redux",
+    "path": "Icons/redux.svg",
+    "section": "",
+    "experience": "1+ years"
+  },
+  {
+    "id": 17,
+    "title": "TypeScript",
+    "path": "Icons/typescript.svg",
+    "section": "",
+    "experience": ""
+  }
+]
