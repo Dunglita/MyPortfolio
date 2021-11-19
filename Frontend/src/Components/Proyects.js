@@ -1,50 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Fade from "react-reveal/Fade";
 import "../Css/Proyects.css";
-import CardList from "./CardList";
-
+import Card from "./Card";
+import data from "../Assets/Json/Proyects.json";
 export default function Proyects() {
-  const [showDetail, setShowDetail] = useState(false);
-  const handleShowDetail = () => {
-    setShowDetail(!showDetail);
-  };
-  const [proyectDetail, setProyectDetail] = useState("");
-  const [detailColor, setDetailColor] = useState("");
-  const handleDetailColor = (newDetailColor) => {
-    setDetailColor(newDetailColor);
-  };
-  const handleProyectDetail = (newProyectDetail) => {
-    setProyectDetail(newProyectDetail);
-  };
-  const detailBackground = {
-    backgroundColor: detailColor,
-  };
+  const [proyects, setProyects] = useState([]);
+  useEffect(getProyects, []);
+  function getProyects() {
+    setProyects(data);
+  }
+  function getCards() {
+    const cards = proyects.map((proyect) => {
+      return (
+        <>
+          <Fade>
+            <Card
+              title={proyect.title}
+              description={proyect.description}
+              link={proyect.link}
+              image={proyect.image}
+              detail={proyect.detail}
+              tag={proyect.tag}
+            />
+          </Fade>
+        </>
+      );
+    });
+    return cards;
+  }
   return (
-    <div id="proyects-wrapper">
-      <div id="proyect-left-container">
-        <div id="left-text">
-          <h1>Proyects</h1>
-          <h5>Samples of some of my work</h5>
-        </div>
+    <div className="proyects_wrapper" id="my-proyects">
+      <div className="proyects_title">
+        <h1>Proyects</h1>
+        <h5>SAMPLES OF SOME OF MY WORK</h5>
       </div>
-      <div id="proyect-middle-container">
-        <CardList
-          showDetail={showDetail}
-          handleShowDetail={handleShowDetail}
-          proyectDetail={proyectDetail}
-          handleProyectDetail={handleProyectDetail}
-          handleDetailColor={handleDetailColor}
-        />
-      </div>
-      <div id="proyect-right-container">
-        <div
-          style={detailBackground}
-          className={showDetail ? "show-detail dot-medium" : "hide-detail"}
-        >
-          <div id="right-text">
-            <p>{proyectDetail}</p>
-          </div>
-        </div>
-      </div>
+      <div className="proyects_container">{getCards()}</div>
     </div>
   );
 }

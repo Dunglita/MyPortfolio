@@ -1,39 +1,27 @@
 import React from "react";
-import "../Css/Card.scss";
+import "../Css/Card.css";
 export default function Card(props) {
-  const style = {
-    backgroundColor: props.color,
-  };
-  function buttonOver() {
-    props.handleShowDetail(true);
-    props.handleProyectDetail(props.detail);
-    props.handleDetailColor(props.color);
-    props.handleSetDetailTag(props.tag);
+  function openTab(e) {
+    e.preventDefault();
+    window.open(props.link, "_blank");
   }
+
   return (
-    <div className="card-wrapper">
-      <div class="card-container">
-        <div class="card">
-          <h2>{props.title}</h2>
-          <i
-            class="fas fa-arrow-right"
-            title="Go to Proyect"
-            onMouseOver={() => buttonOver()}
-            onClick={() => window.open(props.link, "_blank")}
-          ></i>
-          <p>{props.description}</p>
-          <div class="pic">
-            <img src={props.image} alt="img" />
+    <div>
+      <a href="{}" className="my-card" onClick={(e) => openTab(e)}>
+        <img src={props.image} class="card_image" alt="" />
+        <div className="card_overlay">
+          <div className="card_header">
+            <svg className="card_arc" xmlns="http://www.w3.org/2000/svg">
+              <path />
+            </svg>
+            <div className="card_header-text">
+              <h3 className="card_title">{props.tag}</h3>
+            </div>
           </div>
-          <button
-            style={style}
-            title="Go to Proyect"
-            onClick={() => window.open(props.link, "_blank")}
-            onMouseOver={() => buttonOver()}
-            onMouseOut={() => props.handleShowDetail(false)}
-          ></button>
+          <p className="card_description">{props.detail}</p>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

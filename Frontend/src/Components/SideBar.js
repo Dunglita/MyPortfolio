@@ -8,22 +8,35 @@ export default function SideBar(props) {
     <div id="sidebar" className={props.isActive ? null : "visible"}>
       <ul>
         <li>
-          <HashLink smooth to="/#about-me">
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#about-me">
             ABOUT
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#my-proyects">
+          <HashLink
+            smooth
+            onClick={props.handleToggleSideBar}
+            to="/#my-proyects"
+          >
             PROYECTS
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#my-studies">
-            STUDIES
+          <HashLink
+            smooth
+            onClick={props.handleToggleSideBar}
+            to="/#my-learning"
+          >
+            SKILLS
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#contact-me">
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#tools">
+            KNOWLEDGE
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#contact">
             CONTACT
           </HashLink>
         </li>
