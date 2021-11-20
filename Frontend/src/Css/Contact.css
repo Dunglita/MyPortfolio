@@ -167,7 +167,7 @@ h6 {
     border-bottom-right-radius: 40px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 690px) {
   .contact_wrapper {
     margin-bottom: 80vh;
   }

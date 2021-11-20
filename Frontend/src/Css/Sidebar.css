@@ -1,4 +1,4 @@
-#sidebar {
+.sidebar {
   background: rgba(27, 27, 27, 255);
   width: 200px;
   height: 100%;
@@ -10,11 +10,11 @@
   position: fixed;
   z-index: 1000;
 }
-#sidebar.visible {
+.sidebar.visible {
   left: 0px;
   transition: left 0.4s linear;
 }
-#sidebar-btn {
+.sidebar_btn {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
@@ -32,7 +32,7 @@ ul li {
   list-style: none;
   padding-top: 50px;
 }
-#sidebar ul li a {
+.sidebar ul li a {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 8pt;
@@ -42,7 +42,7 @@ ul li {
   padding: 12px;
   text-decoration: none;
 }
-#sidebar ul li a:hover {
+.sidebar ul li a:hover {
   -webkit-transition: all 0.6s ease-in;
   -moz-transition: all 0.6s ease-in;
   -ms-transition: all 0.6s ease-in;
@@ -50,7 +50,7 @@ ul li {
   transition: all 0.6s ease-in;
   color: #ff7368;
 }
-#idiom-link {
+.idiom_link {
   text-decoration: none;
   position: absolute;
   font-size: 8pt;
@@ -59,7 +59,7 @@ ul li {
   bottom: 10px;
   left: 10px;
 }
-#idiom-link:hover {
+.idiom_link:hover {
   -webkit-transition: all 0.6s ease-in;
   -moz-transition: all 0.6s ease-in;
   -ms-transition: all 0.6s ease-in;
@@ -102,8 +102,11 @@ ul li {
   stroke-dashoffset: -68px;
 }
 @media (max-width: 650px) {
-  #sidebar {
+  .sidebar {
     width: 100%;
     left: -100%;
+  }
+  .sidebar_btn {
+    right: -30px;
   }
 }

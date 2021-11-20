@@ -1,4 +1,4 @@
-.learning-wrapper {
+.skills_wrapper {
   width: 100%;
   height: fit-content;
   position: relative;
@@ -10,11 +10,11 @@
   margin-bottom: 20vh;
   padding: 2% 0%;
 }
-.learning-title {
+.learning_title {
   padding-left: 10%;
   padding-right: 10%;
 }
-.learning-title > h1 {
+.learning_title > h1 {
   font-family: "Dynalight", cursive;
   font-size: 35pt;
   letter-spacing: 2pt;
