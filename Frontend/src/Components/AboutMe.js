@@ -53,14 +53,14 @@ export default function AboutMe() {
           <div className="right-content">
             <div className="right-elements">
               <p>
-                Hi, my name is Daniel Garcia, Dani for short, I'm a both
-                Fullstack and Web Developer bassed in Mendoza, Argentina.
+                Hi, my name is Daniel Garcia, Dani for short, I'm both a
+                Fullstack and a Web Developer bassed in Mendoza, Argentina.
                 <br />
                 <br />
-                Actually I'm involved in the area of Web Developping using React
-                and NodeJS, having special interest in Frontend and UX/UI
-                desing. Also at the moment I'm learning Angular and doing a Java
-                course.
+                Actually I'm mostly involved in the area of Web Developping
+                using React and NodeJS, having special interest in Frontend and
+                UX/UI desing. Also at the moment I'm learning Angular and
+                Python.
                 <br />
                 <br />
                 Currently I'm in the search of an oportunity to join a team and
