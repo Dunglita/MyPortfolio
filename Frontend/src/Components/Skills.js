@@ -23,8 +23,8 @@ export default function Skills() {
     return skillCards;
   }
   return (
-    <div className="learning-wrapper" id="my-learning">
-      <div className="learning-title">
+    <div className="skills_wrapper" id="skills">
+      <div className="learning_title">
         <h1>Skills</h1>
         <h5>WHAT I DO AND THE WAY I WORK</h5>
       </div>

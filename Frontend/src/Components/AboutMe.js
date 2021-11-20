@@ -10,7 +10,7 @@ export default function AboutMe() {
   };
   return (
     <>
-      <div className="about-wrapper" id="about-me">
+      <div className="about-wrapper" id="about">
         <div className="about-title">
           <h1>About me</h1>
           <h5>SOME BASIC INFO ABOUT THE PERSON NEXT TO YOUR EYES</h5>

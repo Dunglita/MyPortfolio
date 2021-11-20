@@ -5,34 +5,26 @@ import { HashLink } from "react-router-hash-link";
 
 export default function SideBar(props) {
   return (
-    <div id="sidebar" className={props.isActive ? null : "visible"}>
+    <div className={props.isActive ? "sidebar" : "sidebar visible"}>
       <ul>
         <li>
-          <HashLink smooth onClick={props.handleToggleSideBar} to="/#about-me">
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#about">
             ABOUT
           </HashLink>
         </li>
         <li>
-          <HashLink
-            smooth
-            onClick={props.handleToggleSideBar}
-            to="/#my-proyects"
-          >
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#proyects">
             PROYECTS
           </HashLink>
         </li>
         <li>
-          <HashLink
-            smooth
-            onClick={props.handleToggleSideBar}
-            to="/#my-learning"
-          >
+          <HashLink smooth onClick={props.handleToggleSideBar} to="/#skills">
             SKILLS
           </HashLink>
         </li>
         <li>
           <HashLink smooth onClick={props.handleToggleSideBar} to="/#tools">
-            KNOWLEDGE
+            TOOLS
           </HashLink>
         </li>
         <li>
@@ -41,7 +33,7 @@ export default function SideBar(props) {
           </HashLink>
         </li>
       </ul>
-      <div id="sidebar-btn">
+      <div className="sidebar_btn">
         <svg
           className={
             props.isActive ? "ham hamRotate ham4" : "ham hamRotate ham4 active"
@@ -64,7 +56,7 @@ export default function SideBar(props) {
       <div>
         <Link
           to={props.isSpanish ? "/" : "/english"}
-          id="idiom-link"
+          className="idiom_link"
           onClick={props.handleLanguage}
         >
           ES/EN

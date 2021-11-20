@@ -21,7 +21,7 @@ export default function Tools() {
   return (
     <div className="tools_wrapper" id="tools">
       <div className="tools_title">
-        <h1>Knowledge</h1>
+        <h1>Tools</h1>
         <h5>THINGS I FEEL CONFIDENT WORKING WITH</h5>
       </div>
       <div className="tools">{getMyTools()}</div>

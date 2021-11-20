@@ -29,7 +29,7 @@ export default function Proyects() {
     return cards;
   }
   return (
-    <div className="proyects_wrapper" id="my-proyects">
+    <div className="proyects_wrapper" id="proyects">
       <div className="proyects_title">
         <h1>Proyects</h1>
         <h5>SAMPLES OF SOME OF MY WORK</h5>
