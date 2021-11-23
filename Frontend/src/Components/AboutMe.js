@@ -10,18 +10,18 @@ export default function AboutMe() {
   };
   return (
     <>
-      <div className="about-wrapper" id="about">
-        <div className="about-title">
+      <div className="about_wrapper" id="about">
+        <div className="about_title">
           <h1>About me</h1>
-          <h5>SOME BASIC INFO ABOUT THE PERSON NEXT TO YOUR EYES</h5>
+          <h5>SOME BACKGROUND ABOUT ME</h5>
         </div>
-        <div className="about-content">
-          <div className="my-info">
+        <div className="about_content">
+          <div className="my_info">
             <h4
               className={
                 showPersonal
-                  ? "show-personal default-cursor"
-                  : "hide-personal default-cursor"
+                  ? "show_personal default_cursor"
+                  : "hide_personal default_cursor"
               }
               onMouseOver={() => handleSetShowPersonal(true)}
             >
@@ -31,8 +31,8 @@ export default function AboutMe() {
               onMouseOver={() => handleSetShowPersonal(true)}
               className={
                 showPersonal
-                  ? "show-personal default-cursor personal-list"
-                  : "hide-personal default-cursor personal-list"
+                  ? "show_personal default_cursor personal_list"
+                  : "hide_personal default_cursor personal_list"
               }
             >
               <li>Dog Lover</li>
@@ -41,7 +41,7 @@ export default function AboutMe() {
               <li>Cinephile</li>
               <li>Rock Fan</li>
             </ul>
-            <div className="my-image">
+            <div className="my_image">
               <img
                 src={me}
                 alt="Daniel Garcia"
@@ -50,8 +50,8 @@ export default function AboutMe() {
               />
             </div>
           </div>
-          <div className="right-content">
-            <div className="right-elements">
+          <div className="right_content">
+            <div className="right_elements">
               <p>
                 Hi, my name is Daniel Garcia, Dani for short, I'm both a
                 Fullstack and a Web Developer bassed in Mendoza, Argentina.
@@ -78,7 +78,7 @@ export default function AboutMe() {
               </a>
               <a
                 type="button"
-                className="btn btn-outline btn-cv"
+                className="btn btn-outline btn_cv"
                 href={Cv}
                 rel="noreferrer"
                 target="_blank"

@@ -3,13 +3,13 @@ import "../Css/SkillCard.css";
 export default function SkillCard(props) {
   return (
     <div>
-      <div class="skill">
+      <div className="skill">
         <div>
-          <div class="skill_icon">
-            <i class={props.icon}></i>
+          <div className="skill_icon">
+            <i className={props.icon}></i>
           </div>
-          <h2 class="skill_title">{props.title}</h2>
-          <p class="skill_apply">{props.description}</p>
+          <h2 className="skill_title">{props.title}</h2>
+          <p className="skill_apply">{props.description}</p>
         </div>
       </div>
     </div>

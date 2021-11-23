@@ -1,22 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/Card.css";
 export default function Card(props) {
   function openTab(e) {
     e.preventDefault();
     window.open(props.link, "_blank");
   }
-
+  const [cardHover, setCardHover] = useState(false);
+  const handleCardHover = (newHover) => {
+    setCardHover(newHover);
+  };
   return (
     <div>
-      <a href="{}" className="my-card" onClick={(e) => openTab(e)}>
-        <img src={props.image} class="card_image" alt="" />
+      <a href="{}" className="proyect_card" onClick={(e) => openTab(e)}>
+        <img src={props.image} className="card_image" alt="" />
         <div className="card_overlay">
           <div className="card_header">
             <svg className="card_arc" xmlns="http://www.w3.org/2000/svg">
-              <path />
+              <path d={"M 40 80 c 22 0 40 -22 40 -40 v 40 Z"} />
             </svg>
-            <div className="card_header-text">
+            <div>
               <h3 className="card_title">{props.tag}</h3>
+              <button
+                className="btn btn-outline mobile_btn"
+                onClick={() => handleCardHover()}
+              >
+                <i
+                  className={
+                    cardHover
+                      ? "bi bi-chevron-compact-up"
+                      : "bi bi-chevron-compact-down"
+                  }
+                ></i>
+              </button>
             </div>
           </div>
           <p className="card_description">{props.detail}</p>

@@ -12,13 +12,21 @@ export default function Contact() {
     handleClipboard(false);
   }
   const [cardHoverMail, setCardHoverMail] = useState(false);
-  const handleCardHoverMail = () => {
-    setCardHoverMail(!cardHoverMail);
+  const handleCardHoverMail = (newHoverMail) => {
+    setCardHoverMail(newHoverMail);
   };
   const [cardHoverPhone, setCardHoverPhone] = useState(false);
-  const handleCardHoverPhone = () => {
-    setCardHoverPhone(!cardHoverPhone);
+  const handleCardHoverPhone = (newHoverPhone) => {
+    setCardHoverPhone(newHoverPhone);
   };
+  function clickMailOpen() {
+    handleCardHoverMail(true);
+    handleCardHoverPhone(false);
+  }
+  function clickPhoneOpen() {
+    handleCardHoverPhone(true);
+    handleCardHoverMail(false);
+  }
   return (
     <>
       <div className="contact_wrapper" id="contact">
@@ -39,7 +47,9 @@ export default function Contact() {
               </div>
               <button
                 className="btn btn-outline mobile_btn"
-                onClick={() => handleCardHoverMail()}
+                onClick={() =>
+                  cardHoverMail ? handleCardHoverMail(false) : clickMailOpen()
+                }
               >
                 <i
                   className={
@@ -50,7 +60,7 @@ export default function Contact() {
                 ></i>
               </button>
             </div>
-            <div className={cardHoverMail ? "face2 face2_mobile" : "face2"}>
+            <div className={cardHoverMail ? " face2 face2_mobile" : "face2"}>
               <h6>Email</h6>
               <h5> garciadanos@gmail.com</h5>
               <a
@@ -76,7 +86,11 @@ export default function Contact() {
               </div>
               <button
                 className="btn btn-outline mobile_btn"
-                onClick={() => handleCardHoverPhone()}
+                onClick={() =>
+                  cardHoverPhone
+                    ? handleCardHoverPhone(false)
+                    : clickPhoneOpen()
+                }
               >
                 <i
                   className={

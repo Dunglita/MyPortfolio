@@ -5,11 +5,11 @@ export default function Header() {
     <>
       <div className="header_wrapper">
         <div className="header">
-          <div class="square">
+          <div className="square">
             <span></span>
             <span></span>
             <span></span>
-            <div class="content">
+            <div className="content">
               <h1>D A N I</h1>
               <h4>Web Developer</h4>
             </div>
