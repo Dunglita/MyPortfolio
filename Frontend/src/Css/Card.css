@@ -1,11 +1,11 @@
-.my-card {
+.proyect_card {
   position: relative;
   display: block;
   height: 460px;
   width: 600px;
   border-radius: 40px;
   overflow: hidden;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: left !important;
   margin-top: 10vh;
 }
@@ -27,7 +27,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.my-card:hover .card_overlay {
+.proyect_card:hover .card_overlay {
   transform: translateY(0);
 }
 
@@ -54,10 +54,9 @@
 
 .card_arc path {
   fill: white;
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
-.my-card:hover .card_header {
+.proyect_card:hover .card_header {
   transform: translateY(0);
 }
 
@@ -67,26 +66,41 @@
   color: #ff7368;
 }
 
-.card_tagline {
-  display: block;
-  margin: 1em 0;
-  font-size: 0.8em;
-  color: #ff7368;
-}
-
 .card_description {
   padding: 0 2em 2em;
   margin: 0;
   font-size: 1em;
-  color: #f1372a;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  color: #ff7368;
+  display: block;
   overflow: hidden;
 }
 @media (max-width: 650px) {
-  .my-card {
-    height: 450px;
-    width: 350px;
+  .proyect_card {
+    width: 80vw;
+  }
+
+  .card_overlay {
+    position: relative;
+    transform: translateY(0%);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: red;
+    height: 100%;
+  }
+
+  .card_arc {
+    display: none;
+  }
+  .card_header {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+
+  .proyect_card:hover .card_overlay {
+    transform: translateY(-100%);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
   }
 }

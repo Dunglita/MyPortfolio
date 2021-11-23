@@ -1,4 +1,4 @@
-.about-wrapper {
+.about_wrapper {
   background-color: #1b1b1b;
   width: 100%;
   height: fit-content;
@@ -10,18 +10,18 @@
   text-align: center;
   overflow: hidden;
 }
-.about-title > h1 {
+.about_title > h1 {
   font-family: "Dynalight", cursive;
   font-size: 35pt;
   letter-spacing: 2pt;
   color: #ff7368;
 }
-.about-title > h5 {
+.about_title > h5 {
   font-size: 14pt;
   font-weight: 300;
   color: white;
 }
-.about-content {
+.about_content {
   margin-top: 5%;
   width: fit-content;
   height: fit-content;
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
 }
-.my-info {
+.my_info {
   height: 100%;
   width: auto;
   display: flex;
@@ -40,31 +40,31 @@
   align-items: center;
   justify-content: center;
 }
-.my-info > h4 {
+.my_info > h4 {
   position: absolute;
   top: 7%;
   color: #1b1b1b;
 }
-.my-info:hover .my-image img {
+.my_info:hover .my_image img {
   transform: scale(1.5);
   opacity: 0.2;
 }
-.personal-list {
+.personal_list {
   position: absolute;
   color: #1b1b1b;
 }
-.show-personal {
+.show_personal {
   position: absolute;
   z-index: 22;
   transition: all 0.5s ease;
   filter: opacity(1);
 }
-.hide-personal {
+.hide_personal {
   filter: opacity(0);
   transition: all 0.5s ease;
 }
 
-.my-image {
+.my_image {
   border-radius: 40px;
   height: 100%;
   border: 1px solid #ff7368;
@@ -73,7 +73,7 @@
   background-size: 30%;
 }
 
-.my-image > img {
+.my_image > img {
   position: relative;
   height: 70vh;
   width: 100%;
@@ -81,7 +81,7 @@
   transition: all 0.5s ease;
 }
 
-.right-content {
+.right_content {
   width: 45%;
   height: 70vh;
   display: flex;
@@ -93,15 +93,15 @@
   overflow: auto;
   text-align: left;
 }
-.right-elements {
+.right_elements {
   margin: auto;
 }
-.right-elements > p {
+.right_elements > p {
   font-size: 14pt;
   font-weight: 200;
   color: white;
 }
-.btn-cv {
+.btn_cv {
   color: #ff7368;
   border-color: #ff7368;
   outline-color: #ff7368;
@@ -109,11 +109,11 @@
   width: 150px;
   border-radius: 100vw;
 }
-.btn-cv:hover {
-  background-color: #fa865fc2;
+.btn_cv:hover {
+  background-color: #ff7368;
   color: white;
 }
-.btn-cv:focus {
+.btn_cv:focus {
   box-shadow: 0 0 0 3px #fa865fc2;
 }
 .cv_mobile {
@@ -126,33 +126,33 @@
   display: none;
 }
 .cv_mobile:hover {
-  background-color: #fa865fc2;
+  background-color: #ff7368;
   color: white;
 }
 .cv_mobile:focus {
   box-shadow: 0 0 0 3px #fa865fc2;
 }
 @media (max-width: 1000px) {
-  .right-content {
+  .right_content {
     padding-top: 10px;
     padding-bottom: 10px;
     height: fit-content;
   }
 }
 @media (max-width: 650px) {
-  .my-info {
+  .my_info {
     display: none;
   }
-  .btn-cv {
+  .btn_cv {
     display: none;
   }
   .cv_mobile {
     display: block;
   }
-  .right-content {
+  .right_content {
     width: 100%;
   }
-  .right-elements {
+  .right_elements {
     position: relative;
     display: flex;
     flex-direction: column;

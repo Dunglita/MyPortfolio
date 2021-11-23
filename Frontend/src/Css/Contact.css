@@ -15,7 +15,7 @@
   padding-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 .contact_title > h1 {
@@ -48,6 +48,7 @@
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 40px;
+  height: 0px;
 }
 
 .contact_card .icon {
@@ -167,14 +168,20 @@ h6 {
     border-bottom-right-radius: 40px;
   }
 }
-@media (max-width: 690px) {
-  .contact_wrapper {
-    margin-bottom: 80vh;
-  }
+
+@media (max-width: 649px) {
   .mobile_btn {
     display: block;
   }
   .mobile_btn:hover {
     color: #2b26c3;
+  }
+}
+@media (max-width: 689px) {
+  .contact_wrapper {
+    margin-bottom: 80vh;
+  }
+  .contact_card {
+    margin-bottom: 400px;
   }
 }
