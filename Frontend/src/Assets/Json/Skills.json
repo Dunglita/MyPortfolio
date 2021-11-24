@@ -3,36 +3,36 @@
     "id": 1,
     "icon": "bi bi-braces",
     "title": "Clean Coding",
-    "description": "Creating an easy-to-read, and well structurated code are crucial matters to me"
+    "description": "Creating an easy-to-read, and well structurated code are crucial matters to me."
   },
   {
     "id": 2,
     "icon": "bi bi-display",
     "title": "Creative Design",
-    "description": "I continously search for new insipartions while keeping an eye in the latest web desing trends"
+    "description": "I continously search for new insipartions while keeping an eye in the latest web desing trends."
   },
   {
     "id": 3,
     "icon": "bi bi-hdd-stack",
     "title": "Backend Integration",
-    "description": ""
+    "description": "As a Fullstack Dev I can efectively connect user interfaces with a variety of databases."
   },
   {
     "id": 4,
     "icon": "bi bi-lightning-charge",
     "title": "API REST",
-    "description": ""
+    "description": "I have a great amount of experience working and interacting with different APIs."
   },
   {
     "id": 5,
     "icon": "bi bi-eye",
     "title": "User Friendly",
-    "description": "I start my design from the point of user usability, making it as intuitive and easy to interact as posible"
+    "description": "I start my design from the point of user usability, making it as intuitive and easy to interact as posible."
   },
   {
     "id": 6,
     "icon": "bi bi-phone",
     "title": "Responsive",
-    "description": "My designs works on all kind of devices, develivering a satisfaying experance for each case"
+    "description": "My designs works on all kind of devices, develivering a satisfaying experance for each case."
   }
 ]
