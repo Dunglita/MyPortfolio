@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import MediaQuery from "react-responsive";
 import "../Css/Proyects.css";
 import Card from "./Card";
+import ProyectCardMobile from "./ProyectCardMobile";
 import data from "../Assets/Json/Proyects.json";
 export default function Proyects() {
   const [proyects, setProyects] = useState([]);
@@ -13,16 +15,30 @@ export default function Proyects() {
     const cards = proyects.map((proyect) => {
       return (
         <>
-          <Fade>
-            <Card
-              title={proyect.title}
-              description={proyect.description}
-              link={proyect.link}
-              image={proyect.image}
-              detail={proyect.detail}
-              tag={proyect.tag}
-            />
-          </Fade>
+          <MediaQuery minWidth={650}>
+            <Fade>
+              <Card
+                title={proyect.title}
+                description={proyect.description}
+                link={proyect.link}
+                image={proyect.image}
+                detail={proyect.detail}
+                tag={proyect.tag}
+              />
+            </Fade>
+          </MediaQuery>
+          <MediaQuery maxWidth={650}>
+            <Fade>
+              <ProyectCardMobile
+                title={proyect.title}
+                description={proyect.description}
+                link={proyect.link}
+                image={proyect.image}
+                detail={proyect.detail}
+                tag={proyect.tag}
+              />
+            </Fade>
+          </MediaQuery>
         </>
       );
     });

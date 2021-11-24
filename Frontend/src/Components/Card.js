@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Css/Card.css";
 export default function Card(props) {
   function openTab(e) {
     e.preventDefault();
     window.open(props.link, "_blank");
   }
-  const [cardHover, setCardHover] = useState(false);
-  const handleCardHover = (newHover) => {
-    setCardHover(newHover);
-  };
+
   return (
     <div>
       <a href="{}" className="proyect_card" onClick={(e) => openTab(e)}>
@@ -20,18 +17,6 @@ export default function Card(props) {
             </svg>
             <div>
               <h3 className="card_title">{props.tag}</h3>
-              <button
-                className="btn btn-outline mobile_btn"
-                onClick={() => handleCardHover()}
-              >
-                <i
-                  className={
-                    cardHover
-                      ? "bi bi-chevron-compact-up"
-                      : "bi bi-chevron-compact-down"
-                  }
-                ></i>
-              </button>
             </div>
           </div>
           <p className="card_description">{props.detail}</p>
