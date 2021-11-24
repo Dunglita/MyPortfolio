@@ -4,7 +4,7 @@
     "title": "Portfolio",
     "description": "My personal web",
     "link": "https://github.com/Dunglita/MyPortfolio",
-    "image": "Images/proyect1.jpg",
+    "image": "Images/dani.jpg",
     "detail": "If you are reading this, I acomplished my goal with this proyect. My portfolio is where I intend to showcase everything I've been learning the last years about Web and mostly Frontend desing.",
     "tag": "#Overcoming"
   },
@@ -13,7 +13,7 @@
     "title": "Winery",
     "description": "First react proyect",
     "link": "https://github.com/Dunglita/WineryProyect",
-    "image": "Images/proyect2.jpg",
+    "image": "Images/winery.jpg",
     "detail": "I created this proyect when I got started in React and NodeJS, (still under development), it's a fully functional winery web, it includes landig page, subpages, and an administration section.",
     "tag": "#Learning"
   },
@@ -22,7 +22,7 @@
     "title": "Ad Astra",
     "description": "Discord music bot",
     "link": "https://github.com/Dunglita/AdAstra",
-    "image": "Images/proyect3.jpg",
+    "image": "Images/discord.png",
     "detail": "Ad Astra it's a Discord Bot I made in order to record information about songs when them are played in a server with the most popular music bots. Its fully writed in JavaScript.",
     "tag": "#Entreteinment"
   }
