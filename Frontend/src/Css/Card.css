@@ -74,33 +74,3 @@
   display: block;
   overflow: hidden;
 }
-@media (max-width: 650px) {
-  .proyect_card {
-    width: 80vw;
-  }
-
-  .card_overlay {
-    position: relative;
-    transform: translateY(0%);
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    background-color: red;
-    height: 100%;
-  }
-
-  .card_arc {
-    display: none;
-  }
-  .card_header {
-    display: flex;
-    flex-direction: column;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-  }
-
-  .proyect_card:hover .card_overlay {
-    transform: translateY(-100%);
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-  }
-}
