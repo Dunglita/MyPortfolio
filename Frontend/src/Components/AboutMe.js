@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Css/AboutMe.css";
 import me from "../Assets/Images/dani2.jpg";
-import Cv from "../Assets/Docs/CVES.pdf";
+import Cv from "../Assets/Docs/Daniel Garcia CV.pdf";
 
 export default function AboutMe() {
   const [showPersonal, setShowPersonal] = useState(false);
